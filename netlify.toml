@@ -10,3 +10,9 @@
 
 [build.environment]
   NODE_VERSION = "16"
+
+[[redirects]]
+  force = true
+  from = "/*"
+  status = 200
+  to = "/.netlify/functions/server/:splat"
