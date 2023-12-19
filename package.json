@@ -4,7 +4,7 @@
   "description": "Example of how to deploy a Express.js Netlify app.",
   "main": "functions/server.js",
   "scripts": {
-    "build": "netlify-lambda build express",
+    "build": "rimraf build && netlify-lambda build src && cp ./public/* ./build/",
     "start": "nodemon server-local.js"
   },
   "repository": {
@@ -21,12 +21,12 @@
     "url": "https://github.com/neverendingqs/netlify-express/issues"
   },
   "homepage": "https://github.com/neverendingqs/netlify-express#readme",
-  "dependencies": {},
   "devDependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "netlify-lambda": "^1.6.3",
     "nodemon": "^1.19.2",
+    "rimraf": "^5.0.5",
     "serverless-http": "^2.3.0"
   }
 }
