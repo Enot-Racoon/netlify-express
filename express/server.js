@@ -6,9 +6,18 @@ const app = express();
 const bodyParser = require('body-parser');
 
 const router = express.Router();
+
+const baseStyle = `
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+</style>`;
 router.get('/', (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('<h2>Hello from Express.js!</h2>');
+  res.write(`${baseStyle}<h2>Hello from Express.js!</h2>`);
   res.end();
 });
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
