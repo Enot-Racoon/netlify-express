@@ -15,7 +15,7 @@
   force = true
   from = "/api"
   status = 200
-  to = "/.netlify/functions/server"
+  to = "/index.html"
 
 [[redirects]]
   from = "/*"
