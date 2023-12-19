@@ -13,6 +13,7 @@
 
 [[redirects]]
   force = true
-  from = "/api/*"
+  from = "/api/another"
   status = 200
-  to = "/.netlify/functions/server/:splat"
+  to = "/.netlify/functions/server/:another"
+#  to = "/.netlify/functions/server/:splat"
