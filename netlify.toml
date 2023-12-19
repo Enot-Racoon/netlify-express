@@ -13,10 +13,9 @@
 
 [[redirects]]
   force = true
-  from = "/api/another"
+  from = "/api"
   status = 200
-  to = "/.netlify/functions/server/another"
-#  to = "/.netlify/functions/server/:splat"
+  to = "/.netlify/functions/server"
 
 [[redirects]]
   from = "/*"
