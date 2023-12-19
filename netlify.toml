@@ -15,5 +15,10 @@
   force = true
   from = "/api/another"
   status = 200
-  to = "/.netlify/functions/server/:another"
+  to = "/.netlify/functions/server/another"
 #  to = "/.netlify/functions/server/:splat"
+
+[[redirects]]
+  from = "/*"
+  status = 200
+  to = "/index.html"
